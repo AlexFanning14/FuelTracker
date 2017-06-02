@@ -1,3 +1,21 @@
 <resources>
+    <!--Main Menu-->
     <string name="app_name">FuelTracker</string>
+    <string name="fuel_track_title">Fuel Tracker</string>
+    <string name="btn_nearby_garage">Nearby Garages</string>
+    <string name="btn_stats">Stats</string>
+    <string name="btn_recent_trans">Recent Transactions</string>
+    <string name="btn_log_purchase">Log Purchase</string>
+
+    <!--Log Purchase-->
+    <string name="btn_clear">Clear</string>
+    <string name="lbl_date">Date:</string>
+    <string name="lbl_litres">Litres:</string>
+    <string name="lbl_total_price">Total Price:</string>
+    <string name="lbl_price_pl">Price P/L:</string>
+    <string name="lbl_garage">Garage:</string>
+
+
+    <!--Menu-->
+    <string name="menu_title"></string>
 </resources>

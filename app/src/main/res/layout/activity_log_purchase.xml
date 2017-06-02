@@ -1,154 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@android:color/holo_blue_light"
-    tools:context="com.alexfanning.android.fueltracker.LogPurchase">
+    tools:context="com.alexfanning.android.fueltracker.LogPurchase"
+android:weightSum="7"
+
+    >
+
+
+
 
     <TextView
-        android:layout_width="214dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginRight="85dp"
-        android:layout_marginTop="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/txtViewLogPurchase"
         android:fontFamily="monospace"
-        android:text="Log Purchase"
+        android:text="@string/btn_log_purchase"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
+        android:layout_weight="1"
+        android:gravity="center"
         />
 
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="130dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="sans-serif"
-        android:text="Date:"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewLogPurchase" />
 
-    <TextView
-        android:id="@+id/tvDateVal"
-        android:layout_width="175dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="30dp"
-        android:text="(dateVal)"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@+id/tvDate"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewLogPurchase" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Date:"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvdateval"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
+
+
 
     <TextView
         android:id="@+id/tvLitres"
-        android:layout_width="130dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Litres:"
+        android:text="@string/lbl_litres"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+        android:layout_weight="1"
+         />
 
     <EditText
         android:id="@+id/tbLitres"
-        android:layout_width="175dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        app:layout_constraintLeft_toRightOf="@+id/tvLitres"
-        app:layout_constraintTop_toBottomOf="@+id/tvDateVal" />
+        android:layout_weight="1"
+         />
 
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
     <TextView
         android:id="@+id/tvPrice"
-        android:layout_width="130dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Total Price:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_total_price"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLitres" />
+        android:layout_weight="1"
+        />
 
     <EditText
         android:id="@+id/tbTotPrice"
-        android:layout_width="175dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintLeft_toRightOf="@+id/tvPrice"
-        app:layout_constraintTop_toBottomOf="@+id/tbLitres" />
+        android:layout_weight="1"
+        />
 
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
     <TextView
         android:id="@+id/tvPricePerLitre"
-        android:layout_width="130dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Price P/L:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_price_pl"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+        android:layout_weight="1"
+         />
 
     <EditText
         android:id="@+id/tbPricePL"
-        android:layout_width="175dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_weight="1"
         android:inputType="numberDecimal"
-        app:layout_constraintLeft_toRightOf="@+id/tvPricePerLitre"
-        app:layout_constraintTop_toBottomOf="@+id/tbTotPrice" />
+         />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
 
     <TextView
         android:id="@+id/tvGarage"
-        android:layout_width="130dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Garage:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_garage"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPricePerLitre" />
+        android:layout_weight="1"
+        />
 
     <EditText
         android:id="@+id/tbGarageVal"
-        android:layout_width="175dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintLeft_toRightOf="@+id/tvGarage"
-        app:layout_constraintTop_toBottomOf="@+id/tbPricePL" />
+        android:layout_weight="1"
+        />
+</LinearLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+    <!--Buttons-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_margin="8dp"
+        >
+
+        <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_clear"
+        android:text="@string/btn_clear"
+        android:textSize="24dp"
+        android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+        />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_log_purchase"
+            android:text="@string/btn_log_purchase"
+            android:textSize="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
