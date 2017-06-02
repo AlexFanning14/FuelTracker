@@ -7,4 +7,14 @@
 
     <!--</item>-->
 
+    <item
+
+        android:title="@string/preferences_title"
+
+
+
+        ></item>
+
+
+
 </menu>

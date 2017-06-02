@@ -22,7 +22,6 @@ public class LogPurchase extends AppCompatActivity {
     private EditText mEdtTxtGarage;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

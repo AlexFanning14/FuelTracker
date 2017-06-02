@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Preferences-->
+    <array name="pref_currency_labels">
+        <item>@string/pref_euro_label</item>
+        <item>@string/pref_pound_label</item>
+        <item>@string/pref_dollar_label</item>
+    </array>
+
+    <array name="pref_currency_values">
+        <item>@string/pref_euro_val</item>
+        <item>@string/pref_pound_val</item>
+        <item>@string/pref_dollar_val</item>
+    </array>
+    <!--Preferences-->
+</resources>

@@ -1,6 +1,7 @@
 package com.alexfanning.android.fueltracker;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,6 +42,19 @@ public class MainActivity extends AppCompatActivity {
     protected void btnLogTransaction_Clicked(View v){
         startActivity(new Intent(this,LogPurchase.class));
     }
+
+    protected void btnNearbyGas_Clicked(View v){
+        findGasStations();
+    }
+
+    private void findGasStations(){
+        Uri gmmIntentUri = Uri.parse("geo:0,0?q=gas station");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
+    }
+
+
 
 
 

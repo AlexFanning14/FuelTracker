@@ -2,7 +2,7 @@
     <!--Main Menu-->
     <string name="app_name">FuelTracker</string>
     <string name="fuel_track_title">Fuel Tracker</string>
-    <string name="btn_nearby_garage">Nearby Garages</string>
+    <string name="btn_nearby_garage">Nearby Gas Stations</string>
     <string name="btn_stats">Stats</string>
     <string name="btn_recent_trans">Recent Transactions</string>
     <string name="btn_log_purchase">Log Purchase</string>
@@ -17,5 +17,20 @@
 
 
     <!--Menu-->
-    <string name="menu_title"></string>
+    <string name="preferences_title">Preferences</string>
+
+
+    <!--Preferences-->
+    <string name="pref_euro_label">Euro</string>
+    <string name="pref_pound_label">Pound</string>
+    <string name="pref_dollar_label">Dollar</string>
+
+    <string name="pref_euro_val">€</string>
+    <string name="pref_pound_val">£</string>
+    <string name="pref_dollar_val">$</string>
+
+    <string name="pref_currency_key">currency</string>
+    <string name="pref_currency_title">Currency</string>
+
+
 </resources>
