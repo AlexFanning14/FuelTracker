@@ -22,8 +22,26 @@
         </activity>
         <activity
             android:name=".LogPurchase"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".SettingsActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:label="@string/btn_log_purchase">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LogPurchase"
+            />
+        </activity>
+
+
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/preferences_title">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".LogPurchase"
+            />
+
+
+            </activity>
     </application>
 
 </manifest>

@@ -53,6 +53,8 @@ android:weightSum="7"
             android:layout_height="wrap_content"
             android:id="@+id/tvdateval"
             android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="center"
             />
 
     </LinearLayout>

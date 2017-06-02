@@ -10,7 +10,7 @@
     <item
 
         android:title="@string/preferences_title"
-
+        android:id="@+id/pref_menu_item"
 
 
         ></item>
