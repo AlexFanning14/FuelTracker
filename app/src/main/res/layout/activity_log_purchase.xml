@@ -157,16 +157,16 @@ android:weightSum="7"
         android:layout_margin="8dp"
         >
 
-    <TextView
-        android:id="@+id/tvGarage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_garage"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_weight="1"
-        />
+        <Button
+            android:id="@+id/btnSelectGarage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnSelectGarage_Clicked"
+            android:text="@string/lbl_garage"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     <EditText
         android:id="@+id/tbGarageVal"

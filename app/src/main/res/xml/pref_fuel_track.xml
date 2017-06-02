@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <ListPreference
+        android:defaultValue="@string/pref_petrol_val"
+        android:entries="@array/pref_engine_labels"
+        android:entryValues="@array/pref_engine_values"
+        android:key="@string/pref_engine_key"
+        android:title="@string/pref_engine_title"
+        />
+
+
+
     <ListPreference
         android:defaultValue="@string/pref_euro_val"
         android:entries="@array/pref_currency_labels"
@@ -8,5 +19,8 @@
         android:key="@string/pref_currency_key"
         android:title="@string/pref_currency_title"
         />
+
+
+
 
 </PreferenceScreen>

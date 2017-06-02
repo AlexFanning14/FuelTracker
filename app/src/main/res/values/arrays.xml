@@ -14,5 +14,22 @@
         <item>@string/pref_pound_val</item>
         <item>@string/pref_dollar_val</item>
     </array>
+
     <!--Preferences-->
+
+    <array name="pref_engine_labels">
+        <item>@string/pref_petrol_label</item>
+        <item>@string/pref_diesel_label</item>
+    </array>
+
+    <array name="pref_engine_values">
+        <item>@string/pref_petrol_val</item>
+        <item>@string/pref_diesel_val</item>
+    </array>
+
+
+
+
+
+
 </resources>

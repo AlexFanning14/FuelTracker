@@ -13,7 +13,7 @@
     <string name="lbl_litres">Litres:</string>
     <string name="lbl_total_price">Total Price:</string>
     <string name="lbl_price_pl">Price P/L:</string>
-    <string name="lbl_garage">Garage:</string>
+    <string name="lbl_garage">Select Garage:</string>
 
 
     <!--Menu-->
@@ -33,6 +33,20 @@
 
     <string name="pref_currency_key">currency</string>
     <string name="pref_currency_title">Currency</string>
+
+
+    <!--Prefeerrences engine -->
+
+    <string name="pref_petrol_label">Petrol</string>
+    <string name="pref_diesel_label">Diesel</string>
+
+
+    <string name="pref_petrol_val">petrol</string>
+    <string name="pref_diesel_val">diesel</string>
+
+    <string name="pref_engine_key">engine</string>
+    <string name="pref_engine_title">Engine</string>
+
 
 
 </resources>
